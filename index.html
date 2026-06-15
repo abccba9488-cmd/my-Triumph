@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1a56db">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 <!-- Primary SEO -->
 <title>萱鎧國際人力仲介 | 家庭幫備・家庭看護・漁工廠工・營造工 | 台北</title>
@@ -75,7 +77,17 @@
   },
   "sameAs": [
     "https://line.me/ti/p/~homboma"
-  ]
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "人力仲介服務項目",
+    "itemListElement": [
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"家庭幫備","description":"提供專業的家庭幫備人力，協助處理日常家務、照顧長者及兒童等工作。","url":"https://www.triumph-hr.com.tw/#svc-home"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"家庭看護","description":"專業的家庭看護服務，提供經驗豐富的看護人員，細心照顧家人健康。","url":"https://www.triumph-hr.com.tw/#svc-care"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"漁工廠工","description":"為漁業及工廠提供優質的勞動力，協助企業解決人力需求。","url":"https://www.triumph-hr.com.tw/#svc-fish"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"營造工","description":"提供專業的營造工人力資源，包括各類技術工種，確保工程項目順利進行。","url":"https://www.triumph-hr.com.tw/#svc-const"}}
+    ]
+  }
 }
 </script>
 
@@ -95,7 +107,11 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Preload LCP image (hero background) -->
+<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80&fm=webp">
 <style>
 /* ── 設計代幣 ── */
 :root{
@@ -203,7 +219,7 @@ img{max-width:100%;height:auto;display:block}
 .hero{
   min-height:100vh;
   background:
-    url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=85')
+    url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80&fm=webp')
     center center / cover no-repeat;
   display:flex;align-items:center;position:relative;overflow:hidden;padding-top:76px
 }
@@ -714,7 +730,7 @@ img{max-width:100%;height:auto;display:block}
         </div>
         <div>
           <div class="svc-ph">
-            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="專業家庭幫備服務" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80&fm=webp" alt="台北家庭幫備服務人員協助處理家務與照顧長者兒童" width="800" height="600" loading="lazy" decoding="async">
           </div>
           <div class="det-sec" style="margin-top:26px">
             <h4>✦ 申請流程</h4>
@@ -757,7 +773,7 @@ img{max-width:100%;height:auto;display:block}
         </div>
         <div>
           <div class="svc-ph">
-            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80" alt="專業家庭看護服務" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80&fm=webp" alt="台北家庭看護服務人員提供24小時專業照護" width="800" height="600" loading="lazy" decoding="async">
           </div>
           <div class="det-sec" style="margin-top:26px">
             <h4>✦ 申請流程</h4>
@@ -800,7 +816,7 @@ img{max-width:100%;height:auto;display:block}
         </div>
         <div>
           <div class="svc-ph">
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="漁工廠工人力服務" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80&fm=webp" alt="漁工與工廠作業人力仲介服務" width="800" height="600" loading="lazy" decoding="async">
           </div>
           <div class="det-sec" style="margin-top:26px">
             <h4>✦ 申請流程</h4>
@@ -843,7 +859,7 @@ img{max-width:100%;height:auto;display:block}
         </div>
         <div>
           <div class="svc-ph">
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="專業營造工人力服務" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80&fm=webp" alt="台北營造工程技術人力仲介服務" width="800" height="600" loading="lazy" decoding="async">
           </div>
           <div class="det-sec" style="margin-top:26px">
             <h4>✦ 申請流程</h4>

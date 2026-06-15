@@ -12,7 +12,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 檔案結構
 
-`index.html` 唯一檔案，內部分三區：
+- `index.html`：主頁面，內部分三區
+- `favicon.svg`：網站圖示
+- `robots.txt` / `sitemap.xml`：搜尋引擎索引設定，網域變更時須同步更新 `sitemap.xml` 的 `<loc>` 與 `robots.txt` 的 `Sitemap:`
+
+### `index.html` 內部分三區：
 
 ### `<head>` — SEO 標籤
 - `<title>` + `meta description`：含主要關鍵字，長度分別控制在 60 / 155 字元內
@@ -50,7 +54,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | Google Fonts | Noto Sans TC + Inter | `preconnect` 已設定 |
 | maps.google.com | 地圖嵌入 iframe | 無需 API key |
 | api.qrserver.com | LINE QR Code 圖片 | 即時產生，URL 含 LINE ID |
-| images.unsplash.com | 服務區塊與 Hero 背景圖 | 免費授權，參數 `?auto=format&fit=crop&w=800&q=80` |
+| images.unsplash.com | 服務區塊與 Hero 背景圖 | 免費授權，參數 `?auto=format&fit=crop&w=800&q=80&fm=webp`（已加 `fm=webp` 縮小檔案） |
 
 ## 聯絡資訊（常修改項目）
 
